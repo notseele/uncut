@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Uncut</title>
+    
+</head>
+<body>
+    
+    <header>
+        
+        <img class="logo" src="img/logo.svg">
+        <svg class="burger" width="54" height="17" viewBox="0 0 54 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.5 2H54M21.5 15H54" stroke="#FD531F" stroke-width="3"/>
+        </svg>
+        
+    </header>
+    
+    <nav class="nav">
+        <div class="navcontainer">
+          <h3>
+            About this project:
+          </h3>
+          <p>Uncut is a landing page created by Alma Hortelano Escribano out of pure passion. This project is based in the songs and lyrics of  Eartheater’s music, fueled by the author’s love for mixed media — in this case editorial design, creative UI &amp; songwriting.</p>
+            
+            <h3>
+            Other links:
+          </h3>
+            <p><a target="_blank" href="https://limerence.neocities.org/"> Limerence</a> — An interactive webcomic filled with abstract narrative and complex feelings (only compatible with desktop devices).</p><br>
+            <p><a target="_blank" href="https://www.behance.net/gallery/134539265/Graphic-design-Web-development-Portfolio"> Graphic Design</a> — Behance page from the author’s most notable graphic design / visual identity / website development works.</p><br>      <p><a target="_blank" href="https://itxwicked.neocities.org/"> Illustration</a> — A brief portfolio of illustration work showcasing traditional media, digital illustration &amp; 3D works.</p> <br>
+            <a target="_blank" href="https://www.linkedin.com/in/alma-hortelano-escribano-21b7b222a/"><img class="linkedin" src="img/linkedin.svg"></a>
+        </div>
+    </nav>
+    
+    
+    <main>
+        
+        <section class="hero">    
+            <h1>
+                Can't deny <br> my wings
+            </h1>     
+            <div class="heromvl">
+            </div>
+            </section>
+
+            <section class="intro">
+            <h4>
+                AT LEAST I'M NOT BRANDED
+            </h4>
+            <p class="introtext">
+              Never been a well-trained poodle. Jumping through the hoops, would have been murder — murder to me. I've caught many a bug, caught up in the virus. Ambition and blindsided weakness for a dream. In my bloodstream. In my blood.  
+            </p>
+        </section>
+        
+        <section class="sect1">
+            <img class="sect1img" src="img/2.jpg">
+            <div class="sect1container">
+                <h2 class="sect1h">
+                    Born out of <br> my ashes
+                </h2>
+                <p class="sect1text">
+                Hope has a leak for doubt to seep in, cross my heart with no doubt that I rode it to the grave. Through the pressure and its phases. Up from the bedrock to the necklace, faith has no doubt — like the ashes of a phoenix.
+                </p>
+            </div>
+        </section>
+       
+        <section class="marquee">
+          <div class="track">
+            <div class="content"><h2>&nbsp;LITTLE HORNS · LITTLE HOOVES · SURE FEET · UNCUT WINGS · LITTLE HORNS · LITTLE HOOVES · SURE FEET · UNCUT WINGS · LITTLE HORNS · LITTLE HOOVES · SURE FEET · UNCUT WINGS · LITTLE HORNS · LITTLE HOOVES · SURE FEET · UNCUT WINGS · </h2></div>
+          </div>
+        </section>
+        
+        <section class="sect2">
+            
+            <div class="sect2container">
+                <h2 class="sect2h">
+                    I shiver an <br> avalanche
+                </h2>
+                <p>
+                I've tasted metals of my own blood and learned to like it. I've gone under the knife of love, dissected every vein and vessel. 
+                        <br> <br>
+                I've learned by now that my strength has been forged in the fire of pain. It's a warrior's world. Watch the daybreak set my heart up to be broken again.
+                </p>
+            </div>
+            <div class="sect2mvl"> </div>
+        </section>
+        
+        
+    </main>
+    
+    
+    <footer>
+        <p>&copy; Alma Hortelano 2023</p>     
+    </footer>
+    
+</body>
+    
+ <script>
+    window.onscroll = function () {
+      if (window.pageYOffset >= 200) {
+        document.querySelector("header").classList.add("headerbg");
+        document.querySelector("path").classList.add("burgerstroke");
+      } else {
+        document.querySelector("header").classList.remove("headerbg");
+        document.querySelector("path").classList.remove("burgerstroke");
+      }
+    };
+  </script>
+    
+ <script>
+      const burger = document.querySelector(".burger");
+      const nav = document.querySelector(".nav");
+      burger.addEventListener("click", function () {
+        nav.classList.toggle("open");
+        burger.classList.toggle("open");
+      });
+    </script>   
+    
+</html>
